@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/khuggins1/redux-store/issues"
   },
-  "homepage": "https://github.com/khuggins1/redux-store#readme"
+  "homepage": "https://github.com/khuggins1/redux-store#readme",
+  "dependencies": {
+    "concurrently": "^6.0.2"
+  }
 }
