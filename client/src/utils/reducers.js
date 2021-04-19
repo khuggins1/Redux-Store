@@ -8,6 +8,7 @@ import {
   UPDATE_CATEGORIES,
   UPDATE_CURRENT_CATEGORY,
   CLEAR_CART,
+  TOGGLE_CART
 
 } from "./actions";
 
@@ -61,6 +62,11 @@ export const reducer = (state, action) => {
         cartOpen: false,
         cart: []
       };
+      case TOGGLE_CART:
+        return {
+          ...state,
+          cartOpen: !state.cartOpen
+        };
 
     case UPDATE_CATEGORIES:
       return {
